@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Store
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only><ion-icon name="analytics"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Store</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only><ion-icon name="add-circle"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="agregarPagina()">Agregar Página</button>
+  <button ion-button
+  <ion-segment>
+    <ion-segment-button value="grupo1"> Grupo1</ion-segment-button>
+    <ion-segment-button value="grupo2">Grupo2</ion-segment-button>
+    <ion-segment-button value="grupo3">Grupo3</ion-segment-button>
+  </ion-segment>
+  <div *ngIf="seleccion == 'grupo1'">
+    <button ion-button color="danger">Danger</button>
+    <button ion-button full>Full</button>
+    <button ion-button block>Block</button>
+    <button ion-button round>Round</button>
+    <button ion-button small>Small</button>
+    <button ion-button large>Large</button>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button block>Botón 1</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button block>Botón 2</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button block>Botón 3</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div *ngIf="seleccion == 'grupo2'">
+    <button ion-button outline>outline</button>
+    <button ion-button round outline>roud outline</button>
+    <button ion-button clear>clear</button>
+
+  </div>
+
+</ion-content>

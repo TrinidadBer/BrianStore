@@ -1,0 +1,7 @@
+{
+  "name": "BrianStore",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
